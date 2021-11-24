@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pre-Ingreso</title>
+        <link rel="icon" href="./img/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Soltelec s.a.s">
+        <meta name="keywords" content="moto,carro,pesado,liviano,">
+        <link rel="stylesheet" media="(max-width: 800px)" href="./css/PreIngreso.css" />
+        <link rel="stylesheet" href="./css/PreIngreso.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    </head>
+    <body> 
+        <header class="navbar-header navbar-fixed-top" id="cabeceraPag">
+            <div class="pull-left">
+                <span class="pull-left">
+                    <img id="logoEmpresa"  src="./img/Soltelec.png" alt="" class="img-rounded" style="width: 90px; height: 53px; margin-left: 25px; margin-top: 5px;" /></span>                
+            </div>
+            <div class="pull-right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="label"><a style="color:#DCDCDC;"  href="#" id="nombreUsuario"></a></li>
+                    <li><img class="img-circle img-responsive pull-right" src="./img/user.png" alt="./fonts/user.png" style="margin-right: 40px;height:50px;width:45px;margin-top:10px;"  id="fotoUsuario"></li>   
+                </ul>
+            </div> 
+        </header>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="ContenedorPrincipal">
+                    <div  class="col-xs-12 col-md-12 col-lg-12 cabecera" >
+                        <div id="placaRecepcion" class="pull-left"></div>                    
+                        <h4 class="text-center"><strong>DATOS GENERALES DE ADMISION</strong></h4>
+                    </div>
+                    <form action="" id="frmDatosGenerales">
+                      <!--  <div class="form-group col-xs-1 col-sm-1 col-md-1">
+                            <label >TURNO:</label> <label style="text-align:center" id="turno"></label>
+                        </div> -->
+                        <div class="form-group col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <label>KILOMETRAJE:</label><input class="form-control"  id="kilometraje" type="number" placeholder="KILOMETRAJE" onkeypress="return beta(event)" >
+                        </div>
+                        <div class="form-group col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <label>PESO BRUTO:</label><input class="form-control"  id="pesoBruto" type="number" value="1" placeholder="PESO BRUTO" onkeypress="return beta(event)" >
+                        </div>
+                        <div class="form-group col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <label>EXOSTOS:</label><input class="form-control"  id="exostos" type="number" value="1" placeholder="Nro.EXOSTO" onkeypress="return beta(event)" >
+                        </div>
+                        <div class="form-group col-xs-1 col-sm-1 col-md-1 col-lg-1">
+                            <label>SILLAS:</label><input class="form-control"  id="sillas" type="number" value="1" placeholder="SILLAS" onkeypress="return beta(event)" >
+                        </div>
+                        <div class="form-group col-xs-2 col-sm-2 col-md-2 col-lg-2">
+                            <label>TIEMPOS DE MOTOR:</label>
+                            <select id="tiemposMotor" class="form-control" name=""  >
+                                <option value="4">4T</option>
+                                <option value="2">2T</option>
+                            </select>
+                        </div>   
+                       
+                          <input type="hidden"  value="na" id="tipoVehiculo" placeholder="" >                          
+                    </form>                    
+                   
+                    <form action="" id="aplicaEnse">
+                        <div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">
+                            <ul class="radio-inline">
+                                <li>
+                                    <h2>La Motocicleta Aplica Enseñanza &nbsp;</h2>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" style="margin-top: 20px;">
+                            <div class="center">
+                                <input type="checkbox" name="aplicaEnsenanza" ontouchstart="doKitViajero(this);" value="true">
+                            </div>
+                        </div>
+                    </form>
+                    
+                    <br><br>
+                    <div class="col-xs-12 col-md-12 col-lg-12"></div>
+                    <br>
+                    <div class="col-xs-12 col-md-12 col-lg-12 text-center"><input class="btn-lg btn-primary"  type="button" onclick="registroPreIngreso();" value="GUARDAR"></div>
+                </div> 
+            </div>
+        </div>
+            
+            <footer class="navbar navbar-fixed-bottom">
+                <span class="pull-left"><img id="logoCDA" src="./imagenes/fotosEmpresa/logoCDA.JPG" alt="" class="img-rounded" style="width:90px;height:53px;margin-left:25px;margin-top:5px;"/></span>
+                <p class="text-center">Copyright&nbsp;<i class="fa fa-copyright">&nbsp;</i>2018  Soltelec sas </p> 
+            </footer>      
+            <script src="./js/AHAHlib2.js"></script>	
+            <script src="./js/jquery.min.js"></script>
+            <script src="./js/eModal.min.js"></script>      
+            <script src="./js/bootstrap.min.js"></script>      
+            <script src="./js/preIngresoMoto.js"></script>
+    </body>
+</html>

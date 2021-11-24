@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DERECHA-TRASERA</title>
+        <link rel="icon" href="./img/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="author" content="Soltelec s.a.s">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" href="./css/Particion2Liviano.css">
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">   
+    </head>
+    <body>
+        <div class="container" id="ContenedorPrincipal"  ondblclick="changeCtxMiga()">
+            <div class="row" id="cabeceraPag">                
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 pull-left" id="placaRecepcion"></div>
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3"><p class="text-center"><strong>DERECHA TRASERA</strong></p></div>
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3" id="ContenedorllantaResp">
+                    <div id="llantarRespuesto" >
+                        <img  class="img-circle img-responsive" src="./img/LLantaRes.png" alt="./fonts/LLantaRes.png" href="#modalllantResp"   data-toggle="modal"></div>   
+                </div>
+                <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3 pull-right" id="Contenedor1" >
+                    <div id="Contenedor2">
+                        <img class="img-responsive pull-right" src="./img/derechoTrasero.png" alt="./fonts/derechoTrasero.png"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12" id="bread">
+                    <ol class="breadcrumb">
+                        <li><a id="1" href="#" onclick="callCtxMigaDef(1)">REV.INT Habitaculo del conductor</a></li>
+                        <li><a id="2" href="#" onclick="callCtxMigaDef(2)">Vidrios</a></li>
+                        <li><a id="3" href="#" onclick="callCtxMigaDef(3)">Retrovisores</a></li>
+                        <li><a id="4" href="#" onclick="callCtxMigaDef(4)">Cinturones de seguridad </a></li>
+                        <li><a id="5" href="#" onclick="callCtxMigaDef(5)">Dispositivos de retencion de la carga</a></li>
+                        <li><a id="6" href="#" onclick="callCtxMigaDef(6)">Soporte exterior Rueda-respuesto</a></li>
+                        <li><a id="7" href="#" onclick="callCtxMigaDef(7)">Rines y llantas</a></li>
+                        <li><a id="8" href="#" onclick="callCtxMigaDef(8)">Carroceria y Chasis</a></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="row">
+                <table id="responseDefectos" class="table-responsive" width="100%" border="1">
+                    <thead>
+                        <tr>
+                            <th style="height: 15px; "></th> 
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody >  
+                        
+                    </tbody>
+                </table>      
+            </div>           
+        </div>
+        <div class="row">
+            <div  class="modal fade" id="modalllantResp">
+                <div  class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                            <div class="modal-title text-center"><h5><strong>LLANTA DE RESPUESTO</strong></h5></div>
+                        </div> 
+                        <div class="modal-body">
+                            <div class="form-group">      
+                                <div class="modal-body" style="background: #DCDCDC;height: 140px;">
+                                    <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                    <div class="text-center col-xs-6 col-sm-6 col-md-6 col-lg-6"><input id="llantaRes1" type="number"  class="form-control" autofocus  onkeypress="return beta(event)"></div>
+                                    <div class="text-center col-xs-6 col-sm-6 col-md-6 col-lg-6"><input id="llantaRes2" type="number"  class="form-control" autofocus  onkeypress="return beta(event)"></div>
+                                    <div class="text-center col-xs-6 col-sm-6 col-md-6 col-lg-6"><input id="llantaRes3" type="number"  class="form-control" autofocus  onkeypress="return beta(event)"></div>
+                                    <div class="text-center col-xs-6 col-sm-6 col-md-6 col-lg-6"><input id="llantaRes4" type="number"  class="form-control" autofocus  onkeypress="return beta(event)"></div>
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"></div>
+                                    <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                                     <label>NO APLICA</label>
+                                     <input id="aplicLabrado" type="checkbox" name=""  value="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button"  class="btn btn-primary" data-dismiss="modal" aria-hidden="true" onclick="cargaProfundidad('ctxLLResp')" >GUARDAR LABRADO</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <input type="hidden" id="nroPrueba" value=""> 
+        <input type="hidden" id="fkUsuario" value="">
+        <script src="./js/AHAHlib2.js"></script>
+        <script src="./js/jquery.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/eModal.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/Particion2Liviano.js"></script>
+        <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>

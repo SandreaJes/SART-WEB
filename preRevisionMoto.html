@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PRE-REVISION</title>
+        <link rel="icon" href="./img/favicon.ico">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Soltelec s.a.s">
+        <meta name="keywords" content="moto,carro,pesado,liviano,">
+        <meta name="description" content="inspeciones de motos,carros,vehiculos">
+        <link rel="stylesheet" href="./css/preRevisionMoto.css">
+        <link rel="stylesheet" href="./css/bootstrap.css">
+        <link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    </head>
+    <body>
+        <header class="navbar-header navbar-fixed-top" id="cabeceraPag">
+            <span class="pull-left"><img id="logoEmpresa" src="./img/Soltelec.png" alt="" /></span>
+            <div class="pull-right">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="label"><a style="color:#DCDCDC;"  href="#" id="nombreUsuario"></a></li>
+                    <li><img class="img-circle img-responsive pull-right" src="./img/user.png" alt="./fonts/user.png" style="margin-right: 40px;height:50px;width:45px;margin-top:10px;"  id="fotoUsuario"></li>   
+                </ul>
+            </div> 
+        </header>
+        <div class="container">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="ContenedorPrincipal">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 cabecera">
+                    <div id="placaRecepcion" class="pull-left"></div>
+                    <h4 class="text-center">
+                        <strong>REQUISITOS PARA LA RECEPCION DE LA MOTOCICLETA </strong>
+                    </h4>
+                </div>
+                <form id="frmChecBox" action="">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="limpio">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" >
+                            <input type="checkbox" name="" value="limpio">
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="margin-top: -25px;margin-left:-25px;">
+                            <h2 class="checkbox-inline">La Motocicleta NO se encuentra Limpia</h2>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="colorVehiculo">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" >
+                            <input type="checkbox" name=""  value="colorVehiculo">
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="margin-top: -30px;margin-left:-25px;">
+                            <h2 class="checkbox-inline">El Color NO COINCIDE con el Documento de Propiedad</h2>
+                        </div>
+                    </div>                    
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="seguridad">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" >
+                            <input type="checkbox" name=""  value="seguridad">
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="margin-top: -30px;margin-left: -25px;">
+                            <h2 class="checkbox-inline">Los dispositivos de seguridad NO estan desactivados</h2>
+                        </div>
+                    </div>  
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="lucesMoto">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" >
+                           <input type="checkbox" name=""  value="luces">
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="margin-top: -50px;margin-left:60px;">
+                           <h2 class="checkbox-inline">Las Luces de la Motocicleta NO ENCIENDEN </h2>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="mirilla">
+                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1" style="margin-top: 35px;" >
+                            <input type="checkbox" name="" value="">
+                        </div>
+                        <div class="col-xs-11 col-sm-11 col-md-11 col-lg-11" style="margin-left:-30px;">
+                            <h2 class="checkbox-inline">NO es visible la mirilla liquido de frenos</h2>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-md-12 col-lg-12 text-center" style="margin-top: 20px;"><input class="btn-lg btn-primary"  type="button" onclick="registroPreRevision();" value="GUARDAR"></div>
+                </form> 			
+                <br><br>
+                <div class="col-xs-12 col-sm-12 col-md-12"></div>
+            </div><!-- Cierre del row Principal -->
+        </div><!-- Cierre del contenedor principal del row Principal -->
+        <footer class="navbar navbar-fixed-bottom">         
+            <span class="pull-left"><img id="logoCDA" src="./imagenes/fotosEmpresa/logoCDA.JPG" alt="" class="img-rounded"/></span>
+            <p class="text-center">Copyright&nbsp;<i class="fa fa-copyright">&nbsp;</i>2018 Soltelec sas </p>
+        </footer>
+        <script src="./js/AHAHlib2.js"></script>
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/eModal.min.js"></script>
+        <script src="./js/bootstrap.min.js"></script>
+        <script src="./js/PreRevisionMoto.js"></script>
+        <script src="./js/ie10-viewport-bug-workaround.js"></script>
+    </body>
+</html>

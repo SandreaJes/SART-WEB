@@ -1,0 +1,223 @@
+/* AutoSuggest CSS - Version 1.2 */
+
+ul.as-selections {
+	list-style-type: none;
+	border-radius:2px 2px 2px 2px #b6b6b6;
+	border-bottom: 1px solid #b6b6b6;
+	border-left: 1px solid #aaa;
+	border-right: 1px solid #aaa;
+	padding: 4px 0 4px 4px;
+	margin: 0;	
+	box-shadow:inset 0 1px 2px ;
+	-moz-box-shadow:inset 0 1px 2px  #b6b6b6;        
+    width: 220px;	
+}
+
+ul.as-selections.loading {
+	background-color: #b6b6b6;
+}
+
+ul.as-selections li {
+	margin: 1px 4px 1px 0;       
+}
+/*cuando seleccionamos un producto en el input*/
+ul.as-selections li.as-selection-item {
+	color: #CCCCCC;
+	font-size: 14px;
+	font-family: calibri;
+	text-shadow: 0 1px 1px #000;
+	background-color: #666666;	
+	border: 1px solid #babdb6;
+	border-top-color: #babdb6;
+	padding: 2px 7px 2px 10px;
+	border-radius: 1px 1px 1px 1px;
+	-webkit-border-radius: 1px;
+	-moz-border-radius: 1px;
+	box-shadow: 0 1px 1px #babdb6;
+	-webkit-box-shadow: 0 1px 1px #babdb6;
+	-moz-box-shadow: 0 1px 1px #babdb6;
+}
+
+ul.as-selections li.as-selection-item:last-child {
+	margin-left: 0px;
+}
+
+ul.as-selections li.as-selection-item a.as-close {
+	float: right;
+	margin: 1px 0 0 7px;
+	padding: 0 2px;
+	cursor: pointer;
+	color: #000;
+	font-family: calibri;
+	font-size: 14px;
+	font-weight: bold;
+	text-shadow: 0 1px 1px #000;
+	-webkit-transition: color .1s ease-in;
+}
+
+ul.as-selections li.as-selection-item.blur {
+	color: #000000;
+	background-color: #CCCCCC;
+	background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#000), to(#ccc));
+	border-color: #bbb;
+	border-top-color: #ccc;
+	box-shadow: 0 1px 1px #e9e9e9;
+	-webkit-box-shadow: 0 1px 1px #e9e9e9;
+	-moz-box-shadow: 0 1px 1px #e9e9e9;
+}
+
+ul.as-selections li.as-selection-item.blur a.as-close {
+	color: #CCCCCC;
+}
+
+ul.as-selections li:hover.as-selection-item {
+	color:  #CCCCCC;
+	background-color:  #CCCCCC;
+}
+
+ul.as-selections li:hover.as-selection-item a.as-close {
+	color: #b6b6b6;
+}
+
+ul.as-selections li.as-selection-item.selected {
+	border-color:#000;
+}
+
+ul.as-selections li.as-selection-item a:hover.as-close {
+	color: #CCCCCC;
+}
+
+ul.as-selections li.as-selection-item a:active.as-close {
+	color: #CCCCCC;
+}
+
+ul.as-selections li.as-original {
+	margin-left: 0px;
+}
+
+ul.as-selections li.as-original input {
+	font-size: 14px;
+	width: 200px;
+	height: 37px;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+ul.as-list {
+	position: absolute;
+	list-style-type: none;	
+	padding: 0;
+	font-size: 14px;
+	color: #000;
+	font-family: calibri;
+	background-color: #000;
+	background-color: rgba(255,255,255,0.95);
+	z-index: 1034;
+	box-shadow: 0 2px 12px #222;
+	-webkit-box-shadow: 0 2px 12px #222;
+	-moz-box-shadow: 0 2px 12px #222;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+
+ul.as-list-Compra {
+	position: absolute;
+	list-style-type: none;	
+	padding: 0;
+	font-size: 14px;
+	color: #000;
+	font-family: calibri;
+	background-color: #000;
+	background-color: rgba(255,255,255,0.95);
+	z-index: 1034;
+	box-shadow: 0 2px 12px #222;
+	-webkit-box-shadow: 0 2px 12px #222;
+	-moz-box-shadow: 0 2px 12px #222;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+}
+li.as-result-item, li.as-message {
+	margin: 0 0 0 0;
+	padding: 5px 12px;
+	background-color: transparent;
+	border: 1px solid #fff;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px; 
+	padding-left: 10px ;
+	text-align: left;
+}
+
+li:first-child.as-result-item {
+	margin: 0;
+}
+
+li.as-message {
+	margin: 0;
+	cursor: default;
+}
+
+li.as-result-item.active {
+	background-color: #CCC;
+	border-color: #CCC;
+	color: #fff;
+	text-shadow: 0 1px 2px #CCC;
+}
+li.as-result-item em { 
+	font-style: normal; 
+	background: #444;
+	color: #fff;
+}
+
+li.as-result-item.active em { 
+	background: #444;  
+	color: #fff;
+}
+
+/* Webkit Hacks  */
+@media screen and (-webkit-min-device-pixel-ratio:0) {	
+	ul.as-selections {
+		border-top-width: 2px;
+	}
+	ul.as-selections li.as-selection-item {
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+	ul.as-selections li.as-selection-item a.as-close {
+		margin-top: -1px;
+	}
+	ul.as-selections li.as-original input {
+		height: 30px;
+	}
+}
+
+/* Opera Hacks  */
+@media all and (-webkit-min-device-pixel-ratio:10000), not all and (-webkit-min-device-pixel-ratio:0) {
+	ul.as-list {
+		border: 1px solid #888;
+	}
+	ul.as-selections li.as-selection-item a.as-close {
+		
+		margin-top: 0;
+	}
+}
+
+/* IE Hacks  */
+ul.as-list {
+	border: 1px solid #888\9;
+}
+ul.as-selections li.as-selection-item a.as-close {	
+	margin-top: 0\9;
+}
+
+/* Firefox 3.0 Hacks */
+ul.as-list,  x:-moz-any-link, x:default { 
+	border: 1px solid #888;
+}
+BODY:first-of-type ul.as-list, x:-moz-any-link, x:default { /* Target FF 3.5+ */
+	border: none;
+}
